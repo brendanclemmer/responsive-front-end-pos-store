@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<!-- Main Page Content -->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="sugar free candy">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guilt-Free Goodies</title>
+    <!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<!-- Optional: include jQuery and Bootstrap's JS if you need interactive components -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="assets/main.css">
+    <link rel="stylesheet" href="assets/products.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,700;1,700&family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <a href="#maincontent" class="visually-hidden">Skip to main content</a>
+    <!-- Header Section -->
+    <header>
+        <div class="logo-title-container">
+            <img src="images/guiltfreegoodieslogo1.png" alt="Guilt-Free Goodies Logo">
+            <h1>GUILT-FREE GOODIES</h1>
+        </div>
+
+    
+        
+        <!-- Navigation -->
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about-us.html"><i class="fas fa-info-circle"></i> About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="products.html"><i class="fas fa-box-open"></i> Products</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact-us.html"><i class="fas fa-phone"></i> Contact Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="cart.html"><i class="fas fa-shopping-cart"></i> Cart</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="privacy.html"><i class="fas fa-shield-alt"></i> Privacy Policy</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="terms.html"><i class="fas fa-file-alt"></i> Terms & Conditions</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search...">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+              </form>
+            </div>
+          </nav>
+            
+            
+
+    </header>
+
+    <main id="maincontent">
+    <section class="product-highlight">
+        <article>
+            <img src="images/conservationBitesDelight.png" alt="conservationBitesDelight" class="large-turtle-loot"> 
+            <h2>Conservation Bites Delight</h2> <!-- Larger product name -->
+            <p class="price">$6.69</p> <!-- Product price -->
+            <p class="description">
+              Conservation Bites Delight is a sugar-free gummy candy shaped like mini trees, featuring green apple and wild grape flavors.
+              A portion of each purchase supports reforestation initiatives.
+            </p>
+                
+            </p> <!-- Product description -->
+            <img src="images/NutritionLabelCBD.png" alt="Nutrition Label Conservation Bites Delight" class="nutrition-label">
+            <div class="purchase-info">
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" value="1">
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </article>
+    </section>
+    
+        
+    </main>
+    <div class="footer-divider">
+        <footer class="footer">
+            <a href="#" class="footer-link">Privacy Policy</a>
+            <a href="#" class="footer-link">Terms Of Use</a>
+            <a href="#" class="footer-link">Site Map</a>
+        <p>2024 Guilt-Free Goodies. All rights reserved.</p>
+    </footer>
+    </div>
+    <script>
+        document.querySelector('.add-to-cart').addEventListener('click', function() {
+            let product = {
+                id: 'ConservationBitesDelight', 
+                name: 'Conservation Bites Delight', 
+                price: 6.69, 
+                quantity: parseInt(document.getElementById('quantity').value) || 1 
+            };
+    
+            let cart = JSON.parse(sessionStorage.getItem('cart')) || [];
+            cart.push(product);
+            sessionStorage.setItem('cart', JSON.stringify(cart));
+    
+            window.location.href = 'cart.html';
+        });
+    </script>
+
+  </body>
+</html>

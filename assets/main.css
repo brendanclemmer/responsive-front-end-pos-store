@@ -1,0 +1,429 @@
+/*
+ * Student Name: Brendan Clemmer
+ * Student ID: 040902473
+ * Course: CST8117 - Cross-Platform Web Design
+ * Semester: 1
+ * Assignment: 1: Online Store
+ * Date Submitted:  
+ */
+
+ /* Main CSS for Sugar Free Goodies Website */
+
+/* targeting a light navbar to change its background */
+.navbar-light.bg-light {
+    background-color: darkorange !important;
+}
+
+.navbar .btn-outline-success {
+    background-color: blueviolet;
+    border-color: blueviolet;
+    color: white; /* Change text color if needed */
+}
+
+/* Changing the text color of nav links to blueviolet */
+.navbar .nav-link {
+    color: blueviolet !important;
+}
+
+/* Optional: Changing the hover color to a slightly different shade for visual feedback */
+.navbar .nav-link:hover {
+    color: rebeccapurple !important; /* A darker shade of purple for hover effects */
+}
+
+
+
+
+
+ .visually-hidden {
+    position: absolute;
+    
+    width: 1px;
+    
+    height: 1px;
+    
+    margin: -1px;
+    
+    padding: 0;
+    
+    overflow: hidden;
+    
+    clip: rect(0, 0, 0, 0);
+    
+    border: 0;
+  }
+
+  .logo-title-container {
+    background-color: blueviolet;
+    
+    display: flex;
+    
+    align-items: center;
+    
+    position: relative; /* Make the container the reference for absolutely positioned child elements */
+    
+    justify-content: space-between; /* Adjusts children elements to space between, you might want to keep your layout or adjust as necessary */
+    
+    padding: 10px; /* Add some padding around the contents */
+}
+
+.logo-title-container img {
+    margin-right: 20px; /* Adjust spacing between logo and title as needed */
+    width: 150px; /* Adjust to desired width */
+    height: auto; /* Keeps the aspect ratio intact */
+}
+
+ .company-name {
+    font-family: 'Source Code Pro', monospace;
+    
+    font-weight: 700;
+
+    font-size: 1rem;
+    
+}
+
+
+ /* Basic Reset */
+body, h1, h2, h3, h4, p, figure, figcaption, ul, li, nav, header, section, article {
+    margin: 0;
+    
+    padding: 0;
+    
+    box-sizing: border-box;
+
+}
+
+body, .container {
+    max-width: 100vw;
+    
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+hgroup {
+    text-align: left;
+    
+}
+
+
+/* Body Styles */
+body { 
+    color: white; /* Update text color for better contrast */
+    
+    font-family: "Fredoka", sans-serif;
+    
+    margin:0;
+    
+    padding: 0;
+    
+    background-image: url('../Images/starsbackground.png'); /* Path to your background image */
+    
+    background-size: cover; /* Cover the entire page */
+    
+    background-repeat: no-repeat; /* Do not repeat the image */
+    
+    background-position: center; /* Center the background image */
+    
+    position: relative;
+    
+    min-height: 100%; /* Use the full height of the viewport */
+    
+    width: 100vw;
+
+    font-size: 1rem;
+}
+
+
+
+
+
+/* Container styling to ensure the image can scale within it */
+.hero-image-container {
+    width: 100%; /* Full width of the viewport */
+    
+    overflow: hidden; /* Ensures no part of the image spills out of the container */
+}
+
+/* Image styling for responsiveness */
+.hero-image {
+    width: 100%; /* Scale with the width of the container */
+    
+    height: auto; /* Maintain aspect ratio */
+    
+    display: block; /* Remove any default margins/paddings */
+}
+
+
+h1 {
+    text-align: left;
+    
+    font-family: 'Source Code Pro', monospace;
+    
+    font-weight: 700;
+
+    font-size: 1rem;
+    
+    margin-bottom: 10px;
+    
+    background: linear-gradient(to right, #ffad00 0%, #ff6a00 100%);
+    
+    color: white; /* Necessary for the background-clip */
+    
+    -webkit-background-clip: text;
+    
+    background-clip: text;
+    
+    color: transparent; /* This will show the gradient as the text color */
+    
+    display: inline-block; /* Necessary for the gradient to apply correctly */
+    
+    padding: 10px; /* Adjust padding as needed */
+    
+    font-size: 50px;
+    
+    text-shadow: none;
+}
+
+hgroup{
+    text-align:center;
+}
+
+h2, h3 {
+    font-family: 'Fredoka One', cursive; /* Ensures Fredoka One is applied */
+    
+    letter-spacing: 0.05em; /* Adjusts spacing between letters */
+    
+    word-spacing: 0.1em; /* Adjusts spacing between words */
+    
+    font-size: 24px; /* Adjust the font size as needed */
+    /* Remove font-weight if it's set to bold */
+    
+    color:blueviolet;
+    
+    text-align: center;
+}
+
+
+h2 {
+    text-align: center;
+    
+    font-size: 30px; /* Adjust size specifically for h2 */
+    
+    display: inline-block;
+    
+    margin-bottom: 10px;
+    
+    color: white; /* Specific text color for h2 */
+    
+    background-color: darkorange; /* Specific background color for h2 */
+    
+    padding: 10px;
+    
+    border-radius: 5px;
+}
+
+h3 {
+    text-align: center;
+    
+    font-size: 44px; /* Adjust size specifically for h3 */
+    
+    display: inline-block;
+    
+    margin-bottom: 10px;
+    
+    color: blueviolet; /* Specific text color for h3 */
+    
+    background-color: darkorange; /* Specific background color for h3 */
+    
+    padding: 10px;
+    
+    border-radius: 5px;
+}
+
+.centered-content {
+    
+    border-radius: 30px;
+    
+    text-align: center;
+    
+    font-size: 25px;
+    
+    display: block; /* or 'inline-block', 'flex', depending on your layout needs */
+    
+    margin: auto;
+    
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    
+    color: white;
+    
+    background-color: darkorange;
+    
+    padding: 10px !important;
+    
+    border-radius: 5px !important;
+    
+    width: 50%; /* Adjust as needed */
+}
+
+.list1 {
+    text-align: center;
+    
+    font-size: 25px;
+    
+    display: block;
+    
+    margin: auto;
+    
+    margin-top: 70px; /* Adjust if necessary */
+    
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    
+    color: white;
+    
+    background-color: darkorange;
+    
+    padding: 10px !important;
+    
+    border-radius: 5px !important;
+    
+    width: 50%; /* Adjust as needed */
+    
+    overflow: auto; /* In case of margin-top issues */
+}
+
+.list1 ul {
+    list-style-position: inside;
+    
+    padding-left: 0; /* Removes default padding */
+    
+    margin-left: 0; /* Aligns bullets inside the box */
+    
+    margin-top: 0; /* Adjust if you want space above the list */
+}
+
+.center-wrapper {
+    display: flex;
+    
+    justify-content: center; /* This will center the child element(s) horizontally */
+    
+    width: 100%; /* Make sure the wrapper takes up the full width */
+}
+
+.lootbag {
+    text-align: center; /* Centers text and inline-block elements inside */
+    
+    width: fit-content; /* Fit the content width */
+    
+    margin: 0 auto; /* Center the div itself horizontally */
+}
+
+/* Adjust for Search Form */
+form {
+    margin-bottom: 20px;
+}
+
+input[type=search] {
+    padding: 5px;
+    
+    font-size: 17px;
+    
+    border: 1px solid #ddd;
+    
+    margin-right: 10px;
+}
+
+
+
+button {
+    padding: 5px 10px;
+    
+    background-color: #007bff;
+    
+    color: white;
+    
+    border: none;
+    
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Main Section Styles */
+main {
+    padding: 20px 0;
+
+    flex-grow: 1; /* Allows the main content to expand and push the footer down */
+
+}
+
+
+
+h2, h3 {
+    margin-bottom: 30px;
+}
+
+.footer {
+    background-color: darkorange; /* Apply background color to the entire footer */
+    padding: 20px; /* Add some padding for visual space */
+    text-align: center; /* Center align the content */
+    color: white; /* Set the text color for better readability */
+}
+
+.footer a, .footer p {
+    /* Optional: Ensure links and the paragraph have consistent styling if needed */
+    color: white; /* Set the text color for the links and paragraph */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.footer a:hover {
+    /* Style for hover state of links */
+    text-decoration: underline; /* Example hover effect */
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .contact-form label {
+    margin-bottom: 4px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form button {
+    padding: 8px;
+    margin: 0 0 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .contact-form .consent-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .contact-form .consent-checkbox label {
+    margin: 0;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 600px) {
+    .contact-form input,
+    .contact-form textarea,
+    .contact-form button {
+      width: 100%;
+    }
+  }
+  
+
+
+/* Comments in CSS */
+/* This is a single-line comment in CSS */
+
+/*
+This is a multi-line comment in CSS
+Useful for separating sections or explaining complex styling decisions
+*/

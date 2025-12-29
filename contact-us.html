@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<!-- Main Page Content -->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="sugar free candy">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guilt-Free Goodies</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Full jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- jQuery Validation Plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+    <!-- Bootstrap's JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="assets/main.css">
+    <link rel="stylesheet" href="assets/products.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,700;1,700&family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <a href="#maincontent" class="visually-hidden">Skip to main content</a>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo-title-container">
+            <img src="images/guiltfreegoodieslogo1.png" alt="Guilt-Free Goodies Logo">
+            <h1>GUILT-FREE GOODIES</h1>
+        </div>
+        
+        
+
+        <!-- Navigation -->
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about-us.html"><i class="fas fa-info-circle"></i> About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="products.html"><i class="fas fa-box-open"></i> Products</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact-us.html"><i class="fas fa-phone"></i> Contact Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="cart.html"><i class="fas fa-shopping-cart"></i> Cart</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="privacy.html"><i class="fas fa-shield-alt"></i> Privacy Policy</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="terms.html"><i class="fas fa-file-alt"></i> Terms & Conditions</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search...">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+              </form>
+            </div>
+          </nav>
+          
+          <!--  Function to check if emails match -->
+          <script>
+          function checkEmail() {
+            var email = document.getElementById('email');
+            var confirmEmail = document.getElementById('email-confirm');
+            if (email.value != confirmEmail.value) {
+              confirmEmail.setCustomValidity('Emails do not match.');
+            } else {
+              confirmEmail.setCustomValidity('');
+            }
+          }
+          </script>
+<br>
+<br>
+    <main id="maincontent">
+        <h2>Contact Us</h2>
+
+
+        <!-- Success Message Placeholder -->
+<div id="success-message" style="display:none;">Thank you for your submission!</div>
+
+<div class="contact-form">
+  <!-- Single form -->
+  <form id="contactForm" action="javascript:void(0);" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" tabindex="1" required>
+  
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="6138487277" tabindex="2">
+  
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" tabindex="3" required>
+  
+    <label for="email-confirm">Enter your email again:</label>
+    <input type="email" id="email-confirm" name="email-confirm" tabindex="4" required>
+  
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" tabindex="5" required>
+  
+    <label for="comments">Comments:</label>
+    <textarea id="comments" name="comments" tabindex="6"></textarea>
+  
+    <div class="consent-checkbox">
+      <input type="checkbox" id="consent" name="consent" tabindex="7" required>
+      <label for="consent">I agree to the <a href="/terms-and-conditions.html" target="_blank">Terms & Conditions</a> of this page.</label>
+    </div>
+  
+    <button type="submit" tabindex="8">Submit</button>
+  </form>
+</div>
+
+        
+
+    </main>
+    <!-- Footer Section -->
+    <div class="footer-divider">
+        <footer class="footer">
+            <a href="#" class="footer-link">Privacy Policy</a>
+            <a href="#" class="footer-link">Terms Of Use</a>
+            <a href="#" class="footer-link">Site Map</a>
+        <p>2024 Guilt-Free Goodies. All rights reserved.</p>
+    </footer>
+    </div>
+    <script src="assets/script.js"></script>
+    
+    <script>
+    $(document).ready(function () {
+      // Define a custom method for age validation
+      $.validator.addMethod("ageOfMajority", function (value, element) {
+          var dob = new Date(value);
+          var today = new Date();
+          var age = today.getFullYear() - dob.getFullYear();
+          var m = today.getMonth() - dob.getMonth();
+          if (m < 0 || (m === 0 && today.getDate() < dob.getDate())) {
+              age--;
+          }
+          return age >= 18; // Assuming 18 is the age of majority
+      }, "You must be at least 18 years old to register.");
+  
+      // Initialize the form validation
+      $("#contactForm").validate({
+          rules: {
+              name: "required",
+              phone: {
+                  required: true,
+                  digits: true,
+                  minlength: 10,
+                  maxlength: 10
+              },
+              email: {
+                  required: true,
+                  email: true
+              },
+              "email-confirm": {
+                  equalTo: "#email"
+              },
+              dob: {
+                  required: true,
+                  ageOfMajority: true
+              },
+              comments: {
+                  required: true,
+                  minlength: 3
+              },
+              consent: "required"
+          },
+          messages: {
+              name: "Please enter your name",
+              phone: "Please enter a valid 10-digit phone number",
+              email: "Please enter a valid email address",
+              "email-confirm": "Email addresses must match",
+              dob: "Please enter your date of birth",
+              comments: "Please enter at least 3 characters for your comment",
+              consent: "You must agree to the terms and conditions to proceed"
+          },
+          submitHandler: function(form) {
+              // Show the success message
+              $("#success-message").show();
+              // Optionally, submit the form data via AJAX or clear the form
+              $('#contactForm').trigger("reset");
+          }
+      });
+  });
+</script>
+</body>
+</html>
+    

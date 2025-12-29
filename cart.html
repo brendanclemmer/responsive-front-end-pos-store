@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<!-- Main Page Content -->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="sugar free candy">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guilt-Free Goodies</title>
+    <!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<!-- Optional: include jQuery and Bootstrap's JS if you need interactive components -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="assets/main.css">
+    <link rel="stylesheet" href="assets/products.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,700;1,700&family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+
+    <style>
+        .payment-icons, .crypto-icons {
+            
+            margin-bottom: 20px;
+            margin-right: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#maincontent" class="visually-hidden">Skip to main content</a>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo-title-container">
+            <img src="images/guiltfreegoodieslogo1.png" alt="Guilt-Free Goodies Logo">
+            <h1>GUILT-FREE GOODIES</h1>
+        </div>
+
+     
+        
+        <!-- Navigation -->
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about-us.html"><i class="fas fa-info-circle"></i> About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="products.html"><i class="fas fa-box-open"></i> Products</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact-us.html"><i class="fas fa-phone"></i> Contact Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="cart.html"><i class="fas fa-shopping-cart"></i> Cart</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="privacy.html"><i class="fas fa-shield-alt"></i> Privacy Policy</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="terms.html"><i class="fas fa-file-alt"></i> Terms & Conditions</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search...">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+              </form>
+            </div>
+          </nav>
+
+    <main id="maincontent">
+        
+        
+    <div class="container mt-4">
+    <h2>Your Shopping Cart</h2>
+    <table>
+      <thead>
+          <tr>
+              <th>Product</th>
+              <th>Quantity</th>
+              <th>Price</th>
+              <th>Subtotal</th>
+              <th>Remove</th>
+          </tr>
+      </thead>
+      <tbody>
+      </tbody>
+  </table>
+
+  <div class="row">
+    <div class="col-12">
+        <div class="card" style="background-color: #8A2BE2; border-radius: 0.25rem;">
+            <div class="card-body">
+                <!-- Promo Code Section -->
+                <div class="row mb-4">
+                    <div class="col-md-8">
+                        <label for="promo-code" class="text-white">Promo Code:</label>
+                        <input type="text" id="promo-code" class="form-control">
+                        <button id="apply-promo" class="btn btn-light mt-2">Apply</button>
+                    </div>
+                </div>
+                <!-- Summary Section -->
+                <div class="row">
+                    <div class="col-md-8">
+                        <h4 style="color: orange;">FREE shipping once you spend $30 before tax</h4>
+                        <br>
+                        <h4 class="card-title text-white">Summary</h4>
+                        
+                        <br>
+                        <p class="card-text text-white">Shipping: <span id="shipping-cost">$5.00</span></p>
+                        <p class="card-text text-white">Sales Tax (13%): <span id="sales-tax">$0.00</span></p>
+                        <p class="card-text text-white">Order Total: <span id="order-total">$0.00</span></p>
+                    </div>
+                    <div class="col-md-4">
+                       
+                    </div>
+                </div>
+
+    <!-- Payment Forms Accepted section -->
+    <h2 class="white-text">Payment Forms Accepted</h2>
+    <div class="payment-icons">
+        <i class="fa-brands fa-cc-mastercard fa-4x"></i>
+        <i class="fa-brands fa-cc-visa fa-4x"></i>
+        <i class="fa-brands fa-cc-amex fa-4x"></i>
+        <i class="fa-brands fa-cc-paypal fa-4x"></i>
+    </div>
+
+    
+    <h2 class="white-text">Additional Payment Methods</h2>
+
+    <div class="crypto-icons">
+        <i class="fa-brands fa-bitcoin fa-4x"></i>
+    </div>
+                <!-- Payment Form Section -->
+                <hr class="my-4 text-white"> <!-- Separator -->
+                <h5 class="text-white">Payment Details</h5>
+                <p class="text-white">Complete your purchase by providing your payment details.</p>
+                <!-- The form and its contents go here -->
+                <form id="payment-form">
+                  <div class="mb-3">
+                      <label for="consumers-name" class="form-label text-white">Consumer's Name</label>
+                      <input type="text" id="consumers-name" class="form-control" placeholder="Enter consumer's name">
+                  </div>
+                  
+                  <div class="mb-3">
+                      <label for="card-number" class="form-label text-white">Card Number</label>
+                      <input type="text" id="card-number" class="form-control" placeholder="Enter card number">
+                  </div>
+                  
+                  <div class="row">
+                      <div class="col-sm-6 mb-3">
+                          <label for="expiry" class="form-label text-white">Expiry</label>
+                          <input type="text" id="expiry" class="form-control" placeholder="MM/YY">
+                      </div>
+                      
+                      <div class="col-sm-6 mb-3">
+                          <label for="cvv" class="form-label text-white">CVV/CVC</label>
+                          <input type="password" id="cvv" class="form-control" placeholder="CVV/CVC">
+                      </div>
+                  </div>
+                  
+                  <button type="submit" class="btn btn-light mt-3">Complete Purchase</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+    </main>
+
+
+<!-- Footer Section -->
+<div class="footer-divider">
+    <footer class="footer">
+        <a href="#" class="footer-link">Privacy Policy</a>
+        <a href="#" class="footer-link">Terms Of Use</a>
+        <a href="#" class="footer-link">Site Map</a>
+    <p>2024 Guilt-Free Goodies. All rights reserved.</p>
+</footer>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        let cart = JSON.parse(sessionStorage.getItem('cart')) || [];
+        updateCartDisplay();
+        updateSummary();
+    
+        function updateCartDisplay() {
+            let tbody = document.querySelector('table tbody');
+            tbody.innerHTML = '';
+            cart.forEach((product, index) => {
+                let row = document.createElement('tr');
+                row.innerHTML = `
+                    <td><img src="images/${product.id}.png" alt="${product.name}" style="width:100px;"></td>
+                    <td><input type="number" value="${product.quantity}" class="quantity-input" style="width:60px;"></td>
+                    <td>$${product.price.toFixed(2)}</td>
+                    <td class="subtotal">$${(product.quantity * product.price).toFixed(2)}</td>
+                    <td><button class="remove-item" data-index="${index}">X</button></td>
+                `;
+                tbody.appendChild(row);
+    
+                row.querySelector('.quantity-input').addEventListener('change', function() {
+                    product.quantity = parseInt(this.value);
+                    sessionStorage.setItem('cart', JSON.stringify(cart));
+                    updateSummary();
+                });
+    
+                row.querySelector('.remove-item').addEventListener('click', function() {
+                    cart.splice(index, 1);
+                    sessionStorage.setItem('cart', JSON.stringify(cart));
+                    updateCartDisplay();
+                    updateSummary();
+                });
+            });
+        }
+    
+        function updateSummary() {
+            let total = cart.reduce((acc, cur) => acc + cur.quantity * cur.price, 0);
+            let tax = total * 0.13; // Calculate the sales tax based on the subtotal
+            let shipping = total > 30 ? 0 : 5.00; // Apply shipping cost only if total <= $30
+            let grandTotal = total + tax + shipping; // Include shipping in the grand total calculation
+            document.getElementById('shipping-cost').textContent = `$${shipping.toFixed(2)}`; // Display shipping cost
+            document.getElementById('sales-tax').textContent = `$${tax.toFixed(2)}`;
+            document.getElementById('order-total').textContent = `$${grandTotal.toFixed(2)}`;
+        }
+    });
+    </script>
+
+
+</script>
+
+<style>
+    .white-text {
+    color: white;
+    }
+</style>
+</body>
+</html>

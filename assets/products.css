@@ -1,0 +1,599 @@
+section {
+    text-align: center; /* Centers inline-block elements within */
+    
+    display: flex; /* Use flexbox to layout child elements in a row */
+    
+    justify-content: center; /* Center items horizontally within the section */
+}
+
+img {
+    max-width: 100%; /* Ensures images are never wider than their container */
+    height: auto; /* Keeps the aspect ratio of the images intact */
+}
+
+figure {
+    display: block;
+    
+    width: auto; /* Adjust if you have a specific width in mind */
+    
+    max-width: 400px; /* Adjust to match or exceed your image width */
+    
+    margin-right: auto; /* Keeps the figure to the left */
+    
+    margin-left: 0; /* Aligns the figure to the left edge of its parent */
+    
+    text-align: center;
+    
+    background: blueviolet;
+    
+    padding: 20px;
+    
+    border-radius: 8px;
+}
+
+/*call to action button. */
+
+.large-sweeten-button {
+    background-color: darkorange; /* A sweet, candy-like orange */
+    color: white; /* White text color */
+    font-size: 20px; /* Larger font size */
+    padding: 15px 32px; /* Top and bottom padding of 15px, left and right padding of 32px */
+    border: none; /* No border */
+    cursor: pointer; /* Changes the cursor to a pointer on hover for better user experience */
+    border-radius: 10px; /* Rounded corners for a softer look */
+    font-weight: bold; /* Makes the text bold */
+    text-transform: uppercase; /* Optional: makes the text uppercase for more emphasis */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Adds a subtle shadow for depth */
+    transition: all 0.3s; /* Smooth transition for hover effects */
+    display: block; /* Makes the button a block-level element, necessary for margin auto to work */
+    margin: 0 auto; /* Auto margins on left and right for centering */
+    width: fit-content; /* Ensures the width is just enough for the button's content */
+}
+
+.large-sweeten-button:hover {
+    background-color: #e6821d; /* A slightly darker orange on hover for a subtle effect */
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3); /* Increased shadow for a "lifting" effect */
+}
+
+.large-bulk-button {
+    background-color: darkorange; /* A sweet, candy-like orange */
+    color: white; /* White text color */
+    font-size: 20px; /* Larger font size */
+    padding: 15px 32px; /* Top and bottom padding of 15px, left and right padding of 32px */
+    border: none; /* No border */
+    cursor: pointer; /* Changes the cursor to a pointer on hover for better user experience */
+    border-radius: 10px; /* Rounded corners for a softer look */
+    font-weight: bold; /* Makes the text bold */
+    text-transform: uppercase; /* Optional: makes the text uppercase for more emphasis */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Adds a subtle shadow for depth */
+    transition: all 0.3s; /* Smooth transition for hover effects */
+    display: block; /* Makes the button a block-level element, necessary for margin auto to work */
+    margin: 0 auto; /* Auto margins on left and right for centering */
+    width: fit-content; /* Ensures the width is just enough for the button's content */
+}
+
+.large-bulk-button:hover {
+    background-color: #e6821d; /* A slightly darker orange on hover for a subtle effect */
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3); /* Increased shadow for a "lifting" effect */
+
+}
+
+.easter {
+    display: flex;
+    justify-content: center; /* Horizontally centers content within .easter */
+    align-items: center; /* Vertically centers content within .easter, if desired */
+    flex-direction: column; /* Aligns children (the figure) vertically */
+    text-align: center; /* Centers text within the children */
+    height: 100vh; /* Optional: Adjust based on your layout needs */
+    padding-bottom: 40px;
+}
+
+.easter-figure {
+    margin: 0; /* Resets any default margin */
+    /* Add any additional styles specific to the figure within .easter here */
+}
+
+
+.lootbag {
+    text-align: center; /* Centers text and inline-block elements inside */
+    
+    width: fit-content; /* Fit the content width */
+    
+    margin: 0 auto; /* Center the div itself horizontally */
+}
+
+/* Style for larger screens by default */
+.test {
+    display: flex;
+    justify-content: center; /* Center children horizontally */
+    flex-wrap: wrap; /* Allow items to wrap as needed */
+}
+
+.test article {
+    margin: 10px; /* Adds a little space around each article */
+    text-align: center; /* Center the content inside each article */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) { /* Adjust this value based on your needs */
+    .test {
+        flex-direction: column; /* Stack children vertically */
+        align-items: center; /* Center children horizontally in the container */
+    }
+
+    .test article {
+        width: 100%; /* Optional: make each article take full width */
+        margin: 10px 0; /* Adjust margin for vertical spacing */
+    }
+}
+
+figure img {
+    max-width: 100%; /* Ensure the image does not exceed the figure's width */
+    
+    height: auto; /* Maintain aspect ratio */
+}
+
+figcaption {
+    font-style: italic;
+    
+    text-align: center;
+    
+    margin-top: 5px;
+}
+
+.buy-now {
+    background: linear-gradient(to bottom right, #FFA07A, #FF4500);
+    
+    color: white;
+    
+    border: none;
+    
+    padding: 10px 20px; /* Adjust based on your design */
+    
+    cursor: pointer;
+    
+    text-transform: uppercase; /* Optional: styles the button text */
+    
+    font-weight: bold; /* Optional: makes the text bold */
+    
+    border-radius: 4px; /* Matches the nav style */
+}
+
+.buy-now:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    
+    color: #FFD700;
+}
+
+.product-info {
+    background-color: rgba(0, 0, 0, 0.05); /* Light background for the product info */
+    
+    padding: 15px;
+    
+    border-radius: 4px; /* Optional */
+    
+    margin-top: 10px; /* Adds some space between the caption and the product info */
+}
+/* Featured Products */
+article {
+    display: inline-block; /* Keeps articles inline but allows block-level styling */
+    
+    width: auto; /* Adjusts width based on content, similar to figure */
+    
+    max-width: 400px; /* Matches the figure width for consistency */
+    
+    margin: 10px; /* Provides space around each article */
+    
+    padding: 20px; /* Inner spacing, similar to figure */
+    
+    background: blueviolet; /* Background color to match figure */
+    
+    border-radius: 8px; /* Rounded corners like figure */
+    
+    text-align: center; /* Centers the text and image within the article */
+    
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: Adds a subtle shadow for depth, similar to figure */
+}
+
+article img {
+    max-width: 100%; /* Ensures images are responsive and fit within their containers */
+    
+    height: auto; /* Maintains the aspect ratio of the images */
+    
+    margin-bottom: 10px; /* Adds some space between the image and the text */
+}
+
+article h4, article p {
+    margin: 5px 0; /* Adds uniform spacing around headings and paragraphs */
+}
+
+.hardcandy-container {
+    text-align: center; /* Center the content horizontally */
+    margin-bottom: 20px; /* Add some space below the element */
+}
+
+.hardcandy {
+    border-radius: 30px;
+    
+    text-align: center;
+    
+    font-size: 25px;
+    
+    display: inline-block; /* Ensure the container only takes up the necessary width */
+    
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    
+    color: white;
+    
+    background-color: darkorange;
+    
+    padding: 10px; /* Adjust padding as needed */
+    
+    margin-top: 40px;
+    
+    border-radius: 5px;
+}
+
+.gummiescandy-container {
+    text-align: center; /* Center the content horizontally */
+    
+    margin-bottom: 20px; /* Add some space below the element */
+}
+
+.gummiescandy {
+    border-radius: 30px;
+    
+    text-align: center;
+    
+    font-size: 25px;
+    
+    display: inline-block; /* Ensure the container only takes up the necessary width */
+    
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    
+    color: white;
+    
+    background-color: darkorange;
+    
+    padding: 10px; /* Adjust padding as needed */
+    
+    margin-top: 40px;
+    
+    border-radius: 5px;
+}
+
+
+.assortedgoodies-container {
+    text-align: center; /* Center the content horizontally */
+    
+    margin-bottom: 20px; /* Add some space below the element */
+}
+
+.assortedgoodies {
+    border-radius: 30px;
+    
+    text-align: center;
+    
+    font-size: 25px;
+    
+    display: inline-block; /* Ensure the container only takes up the necessary width */
+    
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    
+    color: white;
+    
+    background-color: darkorange;
+    
+    padding: 10px; /* Adjust padding as needed */
+    
+    margin-top: 40px;
+    
+    border-radius: 5px;
+}
+
+.about-us-title {
+    font-family: 'Fredoka One', cursive; /* Ensures Fredoka One is applied */
+    
+    letter-spacing: 0.05em; /* Adjusts spacing between letters */
+    
+    word-spacing: 0.1em; /* Adjusts spacing between words */
+    
+    font-size: 24px; /* Adjust the font size as needed */
+    /* Remove font-weight if it's set to bold */
+    
+    color:blueviolet;
+    
+    text-align: center;
+    
+    padding-top: 40px;
+}    
+
+.history {
+    font-family: 'Fredoka One', cursive; /* Ensures Fredoka One is applied */
+    
+    letter-spacing: 0.05em; /* Adjusts spacing between letters */
+    
+    word-spacing: 0.1em; /* Adjusts spacing between words */
+    
+    font-size: 24px; /* Adjust the font size as needed */
+    /* Remove font-weight if it's set to bold */
+    
+    color:blueviolet;
+    
+    text-align: center;
+    
+    padding-top: 40px;
+    
+    text-align: left;
+    
+    font-size: 30px; /* Adjust size specifically for h2 */
+    
+    display: inline-block;
+    
+    margin-bottom: 10px;
+    
+    color: white; /* Specific text color for h2 */
+    
+    background-color: darkorange; /* Specific background color for h2 */
+    
+    padding: 10px;
+    
+    border-radius: 5px;
+}
+
+.portrait {
+    background-color: darkorange; /* Specific background color */
+    
+    padding: 10px; /* Creates a 10px "border" of background color around the image */
+    
+    border-radius: 5px; /* Rounded corners */
+    
+    float: left;
+    
+    margin-bottom: 10px;
+    
+    width: 30%; /* or any specific size you prefer */
+    
+    height: auto; /* Adjusts height automatically based on the content */
+    
+    box-sizing: border-box; /* Includes padding in the element's total width and height */
+}
+
+.portrait img {
+    width: 100%; /* Scales the image to fit the width of the container */
+    
+    height: auto; /* Maintains the image's aspect ratio */
+    
+    border-radius: 5px; /* Apply the same border-radius to the image if you want rounded corners */
+}
+
+/* Additional styles for figcaption */
+.portrait figcaption {
+    color: #fff; /* Example: white text color */
+    
+    padding: 5px; /* Example: padding inside the figure for the caption */
+    
+    text-align: center; /* Centers the caption text */
+}
+
+.errormessage {
+    font-family: 'Fredoka One', cursive; /* Ensures Fredoka One is applied */
+    
+    letter-spacing: 0.05em; /* Adjusts spacing between letters */
+    
+    word-spacing: 0.1em; /* Adjusts spacing between words */
+    
+    font-size: 24px; /* Adjust the font size as needed */
+    /* Remove font-weight if it's set to bold */
+    
+    color:blueviolet;
+    
+    text-align: center;
+    
+    padding-top: 40px;
+}
+
+.fourohfourerror {
+   display: flex;
+   
+   justify-content: center;
+}
+
+.privacy-policy-text {
+    background-color: darkorange; /* Specific background color */
+    
+    padding: 10px; /* Creates a 10px "border" of background color around the image */
+    
+    border-radius: 5px; /* Rounded corners */
+    
+    float: left;
+    
+    margin-bottom: 10px;
+    
+    width: 30%; /* or any specific size you prefer */
+    
+    height: auto; /* Adjusts height automatically based on the content */
+    
+    box-sizing: border-box; /* Includes padding in the element's total width and height */
+    
+    font-size:x-large
+}
+
+.termstext {
+    background-color: darkorange; /* Specific background color */
+    
+    padding: 10px; /* Creates a 10px "border" of background color around the image */
+    
+    border-radius: 5px; /* Rounded corners */
+    
+    float: left;
+    
+    margin-bottom: 10px;
+    
+    width: 30%; /* or any specific size you prefer */
+    
+    height: auto; /* Adjusts height automatically based on the content */
+    
+    box-sizing: border-box; /* Includes padding in the element's total width and height */
+    
+    font-size:x-large
+}
+
+/* Adjustments and Additions for the Product Page */
+.product-highlight {
+    text-align: center; /* Ensures everything in the section is centered */
+    
+    padding: 20px;
+}
+
+/* Adjustments for the Product Highlight and Add to Cart Button */
+.product-highlight article {
+    /* Inherits existing article styles */
+    background: blueviolet; /* Sets the background to purple */
+    
+    padding: 40px; /* Adjust padding if necessary */
+    
+    border: 1px solid #ddd; /* Keep or adjust the border as needed */
+    
+    border-radius: 8px; /* Rounded corners for consistency */
+    
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Shadow for depth */
+    
+    text-align: center; /* Centering content */
+
+    width: 100%; /* Make the container responsive */
+    max-width: 1200px; /* Or whatever maximum width you prefer */
+    margin: 0 auto; /* Center the container */
+    padding: 0 10px; /* Adjust padding as needed but keep it reasonable */
+    box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+.product-highlight img {
+    /* Inherits max-width: 100% and height: auto */
+    border-radius: 8px; /* Consistency with article */
+    
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* More pronounced shadow for emphasis */
+}
+
+.Products {
+    width: 80%;
+
+}
+
+h2 {
+    color: blueviolet; /* Consistent with article background for branding */
+}
+
+tbody tr:nth-child(odd) {
+    background-color: darkorange; /* Keeps the first product with a dark orange background */
+}
+
+tbody tr:nth-child(even) {
+    background-color: blueviolet; /* Changes the second (even) product's background to blueviolet */
+}
+
+th, td {
+    text-align: left;
+    
+    padding: 8px;
+    
+    border-bottom: 1px solid #ddd; /* Adjusted to a neutral color for better compatibility */
+}
+
+.remove-item {
+    background: darkorange; /* A solid orange color to stand out */
+    
+    color: white;
+    
+    border: none;
+    
+    border-radius: 4px;
+    
+    cursor: pointer;
+    
+    padding: 5px 10px;
+}
+
+.remove-item:hover {
+    background: #C03600; /* Darker shade of orange for hover effect, adjusted for consistency */
+}
+
+.cart-totals {
+    text-align: right;
+    
+    margin-top: 20px;
+}
+
+.cart-totals p {
+    margin: 5px 0;
+}
+
+table {
+    width: 100%;
+    
+    border-collapse: collapse;
+    
+    margin-top: 20px;
+}
+
+.price {
+    font-size: 1.5em;
+    
+    font-weight: bold;
+    
+    color: #333;
+
+    align-items: center;
+}
+
+.description, .price {
+    text-align: justify;
+    
+    margin-bottom: 20px; /* Additional spacing */
+}
+
+.purchase-info {
+    margin-top: 20px;
+}
+
+.purchase-info input[type="number"] {
+    width: 60px;
+    
+    padding: 5px;
+    
+    margin-right: 10px;
+    
+    border: 1px solid #ccc;
+    
+    border-radius: 4px;
+}
+
+.add-to-cart {
+    background: orange; /* Ensures add-to-cart matches the remove-item button */
+    
+    color: white;
+    
+    padding: 10px 20px;
+    
+    border: none;
+    
+    border-radius: 4px;
+    
+    cursor: pointer;
+    
+    font-size: 1em;
+}
+
+.large-turtle-loot {
+    display: block; /* Ensures the image is centered correctly */
+    max-width: 100%; /* Makes the image responsive */
+    min-width: 400px; /* Ensures the image width doesn't go below 400px */
+    height: auto; /* Maintains the aspect ratio */
+    margin: 0 auto; /* Centers the image */
+}
+
+.nutrition-label {
+    display: block;
+    margin: 0 auto; /* centers the image */
+    width: 40%;
+}

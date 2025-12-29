@@ -1,0 +1,15 @@
+GPT-4. (n.d.). In OpenAI. Retrieved March 27, 2024, from https://chat.openai.com/
+
+"How can I validate an email address in JavaScript?". (n.d.). In Stack Overflow. Retrieved March 27, 2024, from https://stackoverflow.com/questions/46155/how-can-i-validate-an-email-address-in-javascript
+
+"How to calculate the number of days between two dates in JavaScript?". (n.d.). In Stack Overflow. Retrieved March 27, 2024, from https://stackoverflow.com/questions/7763327/how-to-calculate-date-difference-in-javascript
+
+JavaScript email validation. (n.d.). In Simplilearn. Retrieved March 27, 2024, from https://www.simplilearn.com/tutorials/javascript-tutorial/email-validation-in-javascript
+
+JavaScript Form Validation: Email Validation. (n.d.). In w3resource. Retrieved March 27, 2024, from https://www.w3resource.com/javascript/form/email-validation.php
+
+Wonka. (n.d.). Retrieved March 27, 2024, from https://www.wonka.com/
+
+Winnie. (n.d.). [Tutor profile]. In TutorOcean at Algonquin College. Retrieved March 27, 2024, from https://algonquincollege.tutorocean.com/host/jia00034
+
+Zhan, Jane. (n.d.). [Tutor profile]. In TutorOcean at Algonquin College. Retrieved March 28, 2024, from https://algonquincollege.tutorocean.com/host/jia00034
